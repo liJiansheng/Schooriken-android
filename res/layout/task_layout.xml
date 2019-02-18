@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="#FFFFFF" >
+    
+    <LinearLayout
+        android:id="@+id/taskLayout_datePostLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+		android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+        
+        <TextView
+		    android:id="@+id/taskLayout_datePost"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="DUE DATE:"
+		    style="@style/postdate"
+		     />
+	    
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="2dp"
+	        android:background="#800707"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="10dp" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/taskLayout_mainLay"
+        android:layout_below="@id/taskLayout_datePostLay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+	    
+        <TextView
+            android:id="@+id/taskLayout_dateLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="143"
+            style="@style/numericdaysleft"
+        	 />
+        
+        <RelativeLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+	        
+            <TextView
+                android:id="@+id/taskLayout_leftDaysTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginTop="20dp"
+                android:text="Days left" 
+                style="@style/daysleft"/>
+            
+	        <TextView 
+		        android:id="@+id/taskLayout_subject"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_below="@id/taskLayout_leftDaysTxt"
+		        android:text="SUBJECT"
+		        style="@style/subjtitle"
+		        />
+		    
+		    <TextView
+		        android:id="@+id/taskLayout_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_below="@id/taskLayout_subject"
+		        android:text="NAME"
+		        style="@style/assigntitle"
+		        />
+	        
+	    </RelativeLayout>
+        
+    </LinearLayout>
+    <Button
+        android:id="@+id/taskLayout_completeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/taskLayout_mainLay"
+        android:text="COMPLETE"
+        style="@style/customBtn"
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/taskLayout_completeBtn" />
+
+</RelativeLayout>

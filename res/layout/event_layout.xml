@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#FFFFFF" >
+    
+    <FrameLayout
+        android:id="@+id/eventLayout_toggleLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <RelativeLayout
+            android:id="@+id/evtLay_joined"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            
+            <LinearLayout
+		        android:id="@+id/evtLayout_mainLay"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:orientation="horizontal" >
+			    
+		        <TextView
+		            android:id="@+id/evtLayout_dateLeft"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="143"
+		            style="@style/numericdaysleft_red"
+		        	 />
+		        
+		        <RelativeLayout
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content" >
+			        
+		            <TextView
+		                android:id="@+id/evtLayout_leftDaysTxt"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+				        android:layout_marginLeft="10dp"
+				        android:layout_marginTop="30dp"
+		                android:text="Till Event" 
+		                style="@style/daysleft"/>
+		            
+			        <TextView 
+				        android:id="@+id/evtLayout_name"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="10dp"
+				        android:layout_below="@id/evtLayout_leftDaysTxt"
+				        android:text="NAME"
+				        style="@style/subjtitle"
+				        />
+			        
+			    </RelativeLayout>
+			    	        
+		    </LinearLayout>
+		    
+            <LinearLayout
+                android:id="@+id/evt_footer"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+				android:layout_below="@id/evtLayout_mainLay"
+		        android:orientation="horizontal" >
+		        
+		        <TextView 
+			        android:layout_width="match_parent"
+			        android:layout_weight="4.0"
+			        android:layout_height="2dp"
+			        android:background="#800707"
+			        android:layout_marginTop="10dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp" />
+		        
+		        <TextView
+		            android:layout_weight="0.5"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="-8dp"
+				    android:text="see you there!"
+				    style="@style/postdate"
+				     />
+		        
+		    </LinearLayout>
+            
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="5dp"
+		        android:layout_below="@id/evt_footer" />
+            
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/evtLay_notJoined"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	        
+	        <LinearLayout
+		        android:id="@+id/eventLayout_datePostLay"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="15dp"
+		        android:orientation="horizontal" >
+		        
+		        <TextView
+				    android:id="@+id/eventLayout_datePost"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginLeft="10dp"
+				    android:text="DUE DATE:"
+				    style="@style/postdate"/>
+			    
+			    <TextView 
+			        android:layout_width="match_parent"
+			        android:layout_height="2dp"
+			        android:background="#800707"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:layout_marginTop="10dp" />
+		        
+		    </LinearLayout>
+		    
+		    <RelativeLayout
+		        android:id="@+id/eventLayout_mainLayout"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="50dp" >
+		        
+		          <ImageView
+			        android:id="@+id/eventLayout_pic"
+			        android:layout_width="400dp"
+			        android:layout_height="100dp"
+			        android:layout_alignParentTop="true"
+			        android:layout_marginLeft="5dp"
+			        android:layout_marginRight="5dp"
+			        android:src="@drawable/edit_text_holo_light"/>
+		          
+		        <TextView 
+			        android:id="@+id/eventLayout_name"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginTop="10dp"
+			        android:layout_below="@id/eventLayout_pic"
+			        android:text="NAME"
+			        style="@style/eventtitle"
+			        />
+			    
+			    <TextView
+			        android:id="@+id/eventLayout_dateDue"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_below="@id/eventLayout_name"
+			        android:text="date due"
+			        style="@style/eventdate"
+			         />
+			    
+			    <TextView
+			        android:id="@+id/eventLayout_description"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:padding="10dp"
+			        android:layout_below="@id/eventLayout_dateDue"
+			        android:text="DESCRIPTIONS FOR THIS EVENT"
+			        style="@style/bodytxt"
+			        />
+			    
+			    <Button
+			        android:id="@+id/eventLayout_joinBtn"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginRight="10dp"
+			        android:layout_alignParentRight="true"
+			        android:layout_below="@id/eventLayout_description"
+			        android:text="JOIN"
+			        style="@style/customBtn"
+			         />
+			    <TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="5dp"
+			        android:layout_below="@id/eventLayout_joinBtn" />
+		        
+		    </RelativeLayout>
+	        
+	    </RelativeLayout>
+        
+    </FrameLayout>
+
+</RelativeLayout>

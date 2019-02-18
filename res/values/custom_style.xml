@@ -1,0 +1,81 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">#000000</item>
+    </style>
+
+  
+    <style name="postdate" parent="android:Theme.Holo.Light">
+         <item name="android:textColor">#ad0707</item>
+        <item name="android:textSize" >12sp</item>
+    </style>
+    
+     <style name="eventdate" parent="android:Theme.Holo.Light">
+         <item name="android:textColor">#ad0707</item>
+        <item name="android:textSize" >12sp</item>
+        <item name = "android:textStyle">italic</item>
+    </style>
+    
+     <style name="numericdaysleft_red" parent="android:Theme.Holo.Light">
+         <item name="android:textColor">#ad0707</item>
+        <item name="android:textSize" >100sp</item>
+        <item name = "android:textStyle">bold</item>
+    </style>
+    
+      <style name="eventtitle" parent="android:Theme.Holo.Light">
+         <item name="android:textColor">#000000</item>
+        <item name="android:textSize" >18sp</item>
+        <item name ="android:textAllCaps">true</item>
+    </style>
+    
+      <style name="bodytxt" parent="android:Theme.Holo.Light">
+         <item name="android:textColor">#000000</item>
+        <item name="android:textSize" >14sp</item>
+        
+    </style> 
+      
+       <style name="daysleft" parent="android:Theme.Holo.Light">
+         <item name="android:textColor">#8d8d8d</item>
+        <item name="android:textSize" >18sp</item>
+    </style>
+    
+        <style name="numericdaysleft" parent="android:Theme.Holo.Light">
+         <item name="android:textColor">#8d8d8d</item>
+        <item name="android:textSize" >100sp</item>
+        <item name = "android:textStyle">bold</item>
+        </style>
+         <style name="subjtitle" parent="android:Theme.Holo.Light">
+         <item name="android:textColor">#000000</item>
+        <item name="android:textSize" >24sp</item>
+        <item name ="android:textAllCaps">true</item>
+        <item name = "android:textStyle">bold</item>
+    </style>
+           <style name="assigntitle" parent="android:Theme.Holo.Light">
+         <item name="android:textColor">#ad0707</item>
+        <item name="android:textSize" >24sp</item>
+        <item name ="android:textAllCaps">true</item>
+        <item name = "android:textStyle">italic</item>
+    </style>
+   
+    <!-- Button Style -->
+     <style name="customBtn" parent="android:Theme.Holo.Light">
+         <item name="android:background">#ad0707</item>
+         <item name="android:textColor">#ffffff</item>
+         <item name="android:paddingLeft">5dip</item>
+          <item name="android:paddingTop">5dip</item>
+           <item name="android:paddingRight">5dip</item>
+            <item name="android:paddingBottom">5dip</item>
+    </style>
+    
+    <style name="customChkbox" parent="android:Theme.Holo.Light">
+        <item name="android:background">@drawable/chkbox</item>
+    </style>
+    
+    <style name="CustomTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTitleSize">45dip</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+       	 <item name="android:buttonStyle">@style/customBtn</item>
+       	 <item name="android:checkboxStyle">@style/customChkbox</item>
+       	 
+    </style>
+</resources>
